@@ -1,63 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+	
 	<head>
-		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="stylesheet" href="./css/style.css">
 		<meta charset="htf-8">
-		<title>NW Account Creation</title>
+		<title>Nature World Account Creation</title>
 	</head>
 	
 	</body>
-		<nav>
-			<a href="./index.html" class="links">home</a>  |
-			<a href="./about.html" class="links">about</a>  |
-			<a href="./news.html" class="links">news</a>  |
-			<a href="./contact-us.html" class="links">contact us</a>
-		</nav>
-		<div class="top-image">
-			<img src="./images/topimage.png" alt="Overlapping Nature Photos">
+
+		<!-- NAVIGATION -->
+		<div class="menu-wrap">
+			<nav>
+				<ul class="menu">
+					<li><a href="#" class="links">home</a></li>
+					<li><a href="#" class="links">about</a></li>
+					<li><a href="#" class="links">news</a>
+						<ul class="submenu">
+							<li><a href="#" class="links">space</a></li>
+							<li><a href="#" class="links">wildlife</a></li>
+							<li><a href="#" class="links">plantlife</a></li>
+							<li><a href="#" class="links">general interest</a></li>
+						</ul></li>
+					<li><a href="#" class="links">contact us</a></li>
+				</ul>
+			</nav>
 		</div>
-		<header class="header-title">
-			Nature<br>World
+
+		<!-- HEADER -->
+		<header>
+			<ul>
+				<li class="header-title">Nature</li>
+				<li><img class="header-image" src="./images/topimage.png" alt="Overlapping Nature Photos"/></li>
+				<li class="header-title">World</li>
+			</ul>
 		</header>
-		<br>
-		<h1>Welcome</h1>
-		<p>We're pleased that you have chosen to join our <strong>nature loving community</strong>. Please complete the form below to being receiving dazzling photos of nature's great wonders.</p>
-		<p>We offer the best selection of the following types of photographic art:</p>
-		<ul>
-			<li>space</li>
-			<li>wildlife</li>
-			<li>plants</li>
-		</ul>
-		<div class="quote-mark">
-				“
+
+		<!-- DESCRIPTION -->
+		<div class="description">
+			<h1>Welcome</h1>
+			<p>We're pleased that you have chosen to join our <strong>nature loving community</strong>. Please complete the form below to being receiving dazzling photos of nature's great wonders.</p>
+			<p>We offer the best selection of the following types of photographic art:</p>
+			<ul>
+				<li>space</li>
+				<li>wildlife</li>
+				<li>plants</li>
+			</ul>
 		</div>
-		<div class="quote">
-			<blockquote><em>One touch of nature makes the whole world kin.<br>-Shakespeare</em></blockquote>
+
+		<!-- QUOTE -->
+		<blockquote class="focus-quote">
+			<div class="quote-mark quote-mark-top">&OpenCurlyDoubleQuote;</div>
+			<span><em>One touch of nature makes the whole world kin.<br>-Shakespeare</em></span>
+			<div class="quote-mark quote-mark-bottom">&CloseCurlyDoubleQuote;</div>
+		</blockquote>
+		
+		<!-- ACCOUNT CREATION FORM -->
+		<div class="container">
+			<form class="form">
+				<div class="form-header">Please create an account below:</div>
+				<div class="input-wrap"><input type="text" size="40" name="fname"><br><label class="input-label">first name</label></div>
+				<div class="input-wrap"><input type="text" size="40" name="lname"><br><label class="input-label">last name</label></div>
+				<div class="input-wrap"><input type="text" size="40" name="email"><br><label class="input-label">email</label></div>
+				<div class="input-wrap"><input type="password"><br><label class="input-label">password</label></div>
+				<div class="options">
+						<span class="options-header">Please select your favorite photo types:</span><br>
+						<div class="option-group"><label class="option-label">space</label><input type="checkbox" name="space"></div>
+						<div class="option-group"><label class="option-label">sports</label><input type="checkbox" name="sports"></div>
+						<div class="option-group"><label class="option-label">wildlife</label><input type="checkbox" name="wildlife"></div>
+						<div class="option-group"><label class="option-label">plants</label><input type="checkbox" name="plants"></div>
+						<div class="option-group"><label class="option-label">random</label><input type="checkbox" name="random"></div>
+				</div>
+				<div class="submit-wrap"><input type="submit" name="submit"></div>
+			</form>
 		</div>
-		<div class="quote-mark">
-				”
-		</div>
-		<br>
-		<br>
-		<div class="form">
-			first name: <input type="text" size="40" name="fname"><br>
-			last name: <input type="text" size="40" name="lname"><br>
-			email: <input type="text" size="40" name="email"><br>
-			password: <input type="password"><br>
-			<div class="options">
-					Please select your favorite photo types:<br>
-					space <input class="check" type="checkbox" name="space"><br>
-					sports <input class="check" type="checkbox" name="space"><br>
-					wildlife <input class="check" type="checkbox" name="space"><br>
-					plants <input class="check" type="checkbox" name="space"><br>
-					random <input class="check" type="checkbox" name="space"><br>
-			</div>
-			<input type="submit" name="submit">
-		</div>
-		<br>
-		<br>
-		<hr>
-		Copyright 2019 Nature World
-		<a href="./contact.html">Contact Us</a>
+
+		<!-- FOOTER -->
+		<footer>
+			Copyright 2019 Nature World &nbsp; <a class="show-as-link" href="./contact.html">Contact Us</a>
+		</footer>
 	</body>
 </html>
